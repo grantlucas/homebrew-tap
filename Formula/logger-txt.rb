@@ -5,21 +5,21 @@
 class LoggerTxt < Formula
   desc "A simple command-line logging tool for daily activity tracking"
   homepage "https://github.com/grantlucas/Logger-TXT"
-  version "3.0.0"
+  version "3.0.1"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.0/logger-txt_Darwin_x86_64.tar.gz"
-      sha256 "6302c9769c0ee4b21defec0af47a6d48504a6f191a6b7322c40e339497933bbd"
+      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.1/logger-txt_Darwin_x86_64.tar.gz"
+      sha256 "1a3e7f050ec160eb7704f8df1d9e543a3e37db8a05f40fa8a83f8567b30b913d"
 
       define_method(:install) do
         bin.install "logger-txt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.0/logger-txt_Darwin_arm64.tar.gz"
-      sha256 "7f8babaa225ec7cc4a7c54e36ecf28db685fd83a15331a5f7c33c85976fd21b7"
+      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.1/logger-txt_Darwin_arm64.tar.gz"
+      sha256 "841f217ff614a2428fb90a7ff6e5fb77ef38dc8e2d60107570e1a8f73dc8f988"
 
       define_method(:install) do
         bin.install "logger-txt"
@@ -29,15 +29,15 @@ class LoggerTxt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.0/logger-txt_Linux_x86_64.tar.gz"
-      sha256 "37c87d96a8bc1c293e1f3951b27d5248aeb7f55f3723037f7a4d1f141d5f071b"
+      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.1/logger-txt_Linux_x86_64.tar.gz"
+      sha256 "9c82faeb647c64e65af8052670ca4ba0b4d2b8c1b3c43ca16f4065922004854c"
       define_method(:install) do
         bin.install "logger-txt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.0/logger-txt_Linux_arm64.tar.gz"
-      sha256 "f519201c92487f3747bb8b01689a3c241ddedae6581bc6d2dfe636ad985852a3"
+      url "https://github.com/grantlucas/Logger-TXT/releases/download/v3.0.1/logger-txt_Linux_arm64.tar.gz"
+      sha256 "d058b45ffdd48f45461b25f3a2b24b1ad7fb06e7c3859b17072fe73b002950a1"
       define_method(:install) do
         bin.install "logger-txt"
       end

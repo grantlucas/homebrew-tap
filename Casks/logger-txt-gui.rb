@@ -1,6 +1,6 @@
 cask "logger-txt-gui" do
-  version "2.0.2"
-  sha256 "1254bc40dded8a8781a104050dd18d434ea60986011314b50741556c9a0cd78f"
+  version "2.0.3"
+  sha256 "e44fbb7f531d25381fff4aacd98cd200cca82d0bcd12f7eab66cefec62eb8c83"
 
   url "https://github.com/grantlucas/Logger-TXT-OSX-Rewrite/releases/download/v#{version}/Logger-TXT-#{version}-macos.zip"
   name "Logger-TXT"

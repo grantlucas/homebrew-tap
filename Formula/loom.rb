@@ -5,21 +5,21 @@
 class Loom < Formula
   desc "A terminal UI for exploring beads issue dependencies"
   homepage "https://github.com/grantlucas/loom"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/grantlucas/loom/releases/download/v1.1.0/loom_Darwin_x86_64.tar.gz"
-      sha256 "41a6496c4ae13e033b188801575f2462041b8b6a775049b98bda1a98afacb65f"
+      url "https://github.com/grantlucas/loom/releases/download/v1.1.1/loom_Darwin_x86_64.tar.gz"
+      sha256 "6e37e007cd80bf01e7824e1dab6cacbc3475a50501dcc78901ff87cbb41ea69b"
 
       define_method(:install) do
         bin.install "loom"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/grantlucas/loom/releases/download/v1.1.0/loom_Darwin_arm64.tar.gz"
-      sha256 "5feed141bf637faf5e24080deddcb7d849d11812fa10fe87766fd020663ad410"
+      url "https://github.com/grantlucas/loom/releases/download/v1.1.1/loom_Darwin_arm64.tar.gz"
+      sha256 "e34a25d652cc96fd713574c306c5f2896431d132ef7f0f8d6bfe77ede7b8bc1c"
 
       define_method(:install) do
         bin.install "loom"
@@ -29,15 +29,15 @@ class Loom < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grantlucas/loom/releases/download/v1.1.0/loom_Linux_x86_64.tar.gz"
-      sha256 "6025eaa35ca3c803851ff39c8015c49ba033b65c8697923470ef9c4a3557e248"
+      url "https://github.com/grantlucas/loom/releases/download/v1.1.1/loom_Linux_x86_64.tar.gz"
+      sha256 "871fa749bc09c7b0bc36e8c8c070edc3ad73b30895bd9e37f39410282b46f426"
       define_method(:install) do
         bin.install "loom"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/grantlucas/loom/releases/download/v1.1.0/loom_Linux_arm64.tar.gz"
-      sha256 "4a3fbbe454c46b1bfe3f7b2349928d8da953cb8a4879a494e4d3a8e9dc571542"
+      url "https://github.com/grantlucas/loom/releases/download/v1.1.1/loom_Linux_arm64.tar.gz"
+      sha256 "031702dbc581205116a9dce5e372d4a364095f145a17ffbc0861c92272ff19d9"
       define_method(:install) do
         bin.install "loom"
       end

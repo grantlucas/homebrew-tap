@@ -1,13 +1,13 @@
 cask "logger-txt-gui" do
-  version "2.0.4"
-  sha256 "041817b329875bcae57ca9053b52890401216bbd9585b695d372cfe9bd08aa20"
+  version "2.0.5"
+  sha256 "b68e64768679c97031eed213f5437a30481157ae60bc79effce70d36e93a8e62"
 
-  url "https://github.com/grantlucas/Logger-TXT-OSX-Rewrite/releases/download/v#{version}/Logger-TXT-#{version}-macos.zip"
+  url "https://github.com/grantlucas/Logger-TXT-macOS/releases/download/v#{version}/Logger-TXT-#{version}-macos.zip"
   name "Logger-TXT"
   desc "macOS menu bar app for quick timestamped logging"
-  homepage "https://github.com/grantlucas/Logger-TXT-OSX-Rewrite"
+  homepage "https://github.com/grantlucas/Logger-TXT-macOS"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Logger-TXT.app"
 
